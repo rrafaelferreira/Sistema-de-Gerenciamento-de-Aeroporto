@@ -9,31 +9,139 @@
 </head>
 <body>
     <div class="dashboard-container">
+        
         <!--Menu lateral-->
         <aside class="sidebar">
             <nav class="sidebar-nav">
-                <a href="aircraft.html" class="nav-item">
+                <a href="dashboard.html" class="nav-item">
                     <span>Aircrafts</span>
                 </a>
-                <a href="flights.html" class="nav-item">
+                <a href="aircraft.html" class="nav-item">
                     <span>Flights</span>
                 </a>
-                <a href="passengers.html" class="nav-item">
+                <a href="flights.html" class="nav-item">
                     <span>Passengers</span>
                 </a>
-                <a href="weather.html" class="nav-item">
+                <a href="passengers.html" class="nav-item">
                     <span>Weather</span>
+                </a>
+                <a href="weather.html" class="nav-item">
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <!--HELP-->
+            <nav class="help-nav">
+                <a href="Support" class="nav-item">
+                    <span>Support</span>
                 </a>
                 <a href="settings.html" class="nav-item">
                     <span>Settings</span>
                 </a>
+                <a href="notifications" class="nav-item">
+                    <span>Notifications</span>
+                </a> 
+                <!-- <button class="btn-logout">Logou</button> -->
             </nav>
+
         </aside>
 
-        <!--Conteudo Principal-->
-        <main class="main-content">
-            
-        </main>
+        <!------------------------>
+        <!-- Conteúdo Principal -->
+        <!------------------------>
+
+<main class="main-content">
+
+    <!-- Header -->
+    <header class="dashboard-header">
+
+        <div class="header-title">
+            <h1>Welcome Back, ********</h1>
+            <p>Here's what's happening with your operations today</p>
+        </div>
+
+        <div class="header-actions">
+
+            <search class="header-search">
+                <form action="/procurar" method="get">
+                    <input
+                        type="search"
+                        id="caixa-busca"
+                        name="q"
+                        placeholder="Search here..."
+                    >
+
+                    <button type="submit">
+                        <i class="bx bx-search"></i>
+                    </button>
+                </form>
+            </search>
+
+            <div class="header-user">
+
+                <img src="assets/images/avatar.png" alt="Avatar do usuário">
+
+                <div class="user-info">
+                    <strong>Admin</strong>
+                    <span>Administrador</span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard-overview">
+
+    <div class="overview-card">
+        <div class="card-icon">
+            <i class="bx bx-plane"></i>
+        </div>
+
+        <div class="card-info">
+            <span>Total Flights</span>
+            <strong>128</strong>
+            <small>+12% this month</small>
+        </div>
+    </div>
+
+    <div class="overview-card">
+        <div class="card-icon">
+            <i class="bx bx-briefcase-alt-2"></i>
+        </div>
+
+        <div class="card-info">
+            <span>Active Aircraft</span>
+            <strong>42</strong>
+            <small>+4 this month</small>
+        </div>
+    </div>
+
+    <div class="overview-card">
+        <div class="card-icon">
+            <i class="bx bx-user"></i>
+        </div>
+
+        <div class="card-info">
+            <span>Passengers Today</span>
+            <strong>3,842</strong>
+            <small>+8.4% today</small>
+        </div>
+    </div>
+
+    <div class="overview-card">
+        <div class="card-icon">
+            <i class="bx bx-door-open"></i>
+        </div>
+
+        <div class="card-info">
+            <span>Available Gates</span>
+            <strong>18</strong>
+            <small>6 occupied</small>
+        </div>
+    </div>
+
+</section>
+</main>
     </div>
 </body>
 </html>
